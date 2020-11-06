@@ -1,0 +1,9 @@
+main: croxy.codes.mcping.Main
+version: 1.0.0
+name: MCPing
+description: A minimal ping command
+author: CroxyTheDev
+commands:
+  ping:
+    description: Shows entered player's ping or yours.
+    usage: /<command>
