@@ -23,5 +23,9 @@ public class Main extends JavaPlugin {
         return entityPlayer.ping;
     }
 
-    public static String prefix = "§8[§eminecraft-ping§8] ";
+    private static String prefix = "§8[§eminecraft-ping§8] ";
+    
+    public static String getPrefix() {
+        return Main.prefix;
+    }
 }
