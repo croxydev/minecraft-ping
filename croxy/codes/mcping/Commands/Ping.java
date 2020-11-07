@@ -23,7 +23,7 @@ public class Ping implements CommandExecutor {
                 } else if(ping > 150) {
                     status = "§c"+ping+"ms (Bad)";
                 }
-                player.sendMessage(Main.prefix+"§eYour ping§8: " + status);
+                player.sendMessage(Main.getPrefix()+"§eYour ping§8: " + status);
             } else {
                 String pName = args[0];
                 Player p = Bukkit.getPlayer(pName);
@@ -37,9 +37,9 @@ public class Ping implements CommandExecutor {
                     } else if(ping > 150) {
                         status = "§c"+ping+"ms (Bad)";
                     }
-                    player.sendMessage(Main.prefix+"§e" + p.getDisplayName() + "'s §6ping§8: " + status);
+                    player.sendMessage(Main.getPrefix()+"§e" + p.getDisplayName() + "'s §6ping§8: " + status);
                 } else {
-                    player.sendMessage(Main.prefix+"§cCannot find player.");
+                    player.sendMessage(Main.getPrefix()+"§cCannot find player.");
                 }
             }
         } else {
