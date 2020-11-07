@@ -29,7 +29,7 @@ public class Ping implements CommandExecutor {
                 Player p = Bukkit.getPlayer(pName);
                 if (p != null) {
                     int ping = Main.getPing(p);
-                    String durum = null;
+                    String status = null;
                     if(ping < 99) {
                         status = "§a"+ping+"ms (Very good)";
                     } else if(ping > 100 && ping < 149) {
@@ -39,7 +39,7 @@ public class Ping implements CommandExecutor {
                     }
                     player.sendMessage(Main.prefix+"§e" + p.getDisplayName() + "'s §6ping§8: " + status);
                 } else {
-                    player.sendMessage(Main.prefix+"§cAradığınız kullanıcı bulunamadı.");
+                    player.sendMessage(Main.prefix+"§cCannot find player.");
                 }
             }
         } else {
